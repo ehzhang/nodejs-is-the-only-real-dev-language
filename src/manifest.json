@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "NODEJS IS THE ONLY REAL DEV LANGUAGE",
+	"version": "1.0",
+	"description": "Replaces all text on the Hackathon Hackers page to node.js",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/groups/hackathonhackers/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
